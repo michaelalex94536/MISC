@@ -1,29 +1,21 @@
-22:36:16 **** Incremental Build of configuration Debug for project BlackPill_Blink ****
+23:12:24 **** Incremental Build of configuration Debug for project BlackPill_Blink2 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-arm-none-eabi-gcc -o "BlackPill_Blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/BlackPill_Blink/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_Blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BlackPill_Blink.elf
+arm-none-eabi-gcc -o "BlackPill_Blink2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/BlackPill_Blink2/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_Blink2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_Blink2.elf
  
-arm-none-eabi-size  BlackPill_Blink.elf 
-arm-none-eabi-objdump -h -S BlackPill_Blink.elf  > "BlackPill_Blink.list"
+arm-none-eabi-size  BlackPill_Blink2.elf 
+arm-none-eabi-objdump -h -S BlackPill_Blink2.elf  > "BlackPill_Blink2.list"
    text	   data	    bss	    dec	    hex	filename
-   5768	     12	   1572	   7352	   1cb8	BlackPill_Blink.elf
+  12668	    104	   1976	  14748	   399c	BlackPill_Blink2.elf
 Finished building: default.size.stdout
  
-Finished building: BlackPill_Blink.list
+Finished building: BlackPill_Blink2.list
  
-22:38:28 **** Incremental Build of configuration Debug for project BlackPill_Blink ****
+23:12:29 **** Incremental Build of configuration Debug for project BlackPill_Blink2 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "BlackPill_Blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/BlackPill_Blink/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_Blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BlackPill_Blink.elf
- 
-arm-none-eabi-size  BlackPill_Blink.elf 
-arm-none-eabi-objdump -h -S BlackPill_Blink.elf  > "BlackPill_Blink.list"
+arm-none-eabi-size  BlackPill_Blink2.elf 
    text	   data	    bss	    dec	    hex	filename
-   5852	     12	   1572	   7436	   1d0c	BlackPill_Blink.elf
+  12668	    104	   1976	  14748	   399c	BlackPill_Blink2.elf
 Finished building: default.size.stdout
- 
-Finished building: BlackPill_Blink.list
  
