@@ -116,6 +116,7 @@ int main(void)
   uint32_t now = 0;
   uint32_t last_blink = 0;
   uint32_t last_tick = 0;
+  uint32_t loop_cnt = 0;
 
 
   while (1)
@@ -133,17 +134,22 @@ int main(void)
 	 }
 
 	 if(now - last_tick >= 1000)
-    /* USER CODE END WHILE */
 	 {
-		 printf("Tick %lu\r\n", now);
+		 printf("Tick %lu (loop count: %lu)\r\n", now/1000, loop_cnt);  // Convert msec to seconds
 
 		 last_tick = now;
+
+		 loop_cnt = 0;
 	 }
 
+	 loop_cnt++;
+	 /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
+
+
+}   // End main()
 
 /**
   * @brief System Clock Configuration
