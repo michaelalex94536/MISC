@@ -16,3 +16,6 @@ Command-line arguments:  -data /home/michael/Documents/MISC -os linux -ws gtk -a
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-01-19 20:58:49.132
 !MESSAGE Indexed 'BlackPill_Init' (20 sources, 117 headers) in 4.29 sec: 11,055 declarations; 42,964 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.44%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-19 22:25:12.671
+!MESSAGE Indexed 'BlackPill_Blink' (20 sources, 70 headers) in 3.03 sec: 8,607 declarations; 35,645 references; 16 unresolved inclusions; 1,033 syntax errors; 2,998 unresolved names (6.3%)
