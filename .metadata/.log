@@ -1,0 +1,18 @@
+!SESSION 2025-01-19 20:57:17.759 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/michael/Documents/MISC -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-19 20:57:23.635
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-19 20:57:23.636
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/MISC/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-19 20:57:26.145
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-19 20:58:49.132
+!MESSAGE Indexed 'BlackPill_Init' (20 sources, 117 headers) in 4.29 sec: 11,055 declarations; 42,964 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.44%)
