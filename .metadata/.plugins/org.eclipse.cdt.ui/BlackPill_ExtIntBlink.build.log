@@ -1,17 +1,10 @@
-20:48:54 **** Incremental Build of configuration Debug for project BlackPill_ExtIntBlink ****
+21:11:12 **** Incremental Build of configuration Debug for project BlackPill_ExtIntBlink ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "BlackPill_ExtIntBlink.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/BlackPill_ExtIntBlink/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_ExtIntBlink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BlackPill_ExtIntBlink.elf
- 
 arm-none-eabi-size  BlackPill_ExtIntBlink.elf 
-arm-none-eabi-objdump -h -S BlackPill_ExtIntBlink.elf  > "BlackPill_ExtIntBlink.list"
    text	   data	    bss	    dec	    hex	filename
    9892	    112	   1984	  11988	   2ed4	BlackPill_ExtIntBlink.elf
 Finished building: default.size.stdout
  
-Finished building: BlackPill_ExtIntBlink.list
- 
 
-20:48:56 Build Finished. 0 errors, 0 warnings. (took 1s.635ms)
+21:11:14 Build Finished. 0 errors, 0 warnings. (took 1s.395ms)
 
