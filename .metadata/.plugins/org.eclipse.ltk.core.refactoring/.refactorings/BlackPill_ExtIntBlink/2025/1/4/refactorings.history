@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BlackPill_ExtIntBlink/BlackPill_Blink2.ioc&apos; to &apos;BlackPill_ExtIntBlink.ioc&apos;" description="Rename resource &apos;BlackPill_Blink2.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BlackPill_Blink2.ioc" name="BlackPill_ExtIntBlink.ioc" stamp="1737433249904" updateReferences="true"/>
+</session>
