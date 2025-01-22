@@ -18,13 +18,16 @@ Outline:
 #include <stdint.h>
 #include "stm32f4xx.h"
 
-#define GPIOC_EN		(1 << 2)  		// Enable bit 2 to turn on GPIOC 0n the AHB1 bus
-#define P13CLR			(00 << 26)		//
-#define P13OUTPUT		(01 << 26)
 
+#define GPIOC_EN		(1 << 2)  		// Enable bit 2, which turns on GPIOC on the AHB1 bus.
+#define P13CLR			(00 << 26)		// Clear Pin 13 to default mode (input).
+#define P13OUTPUT		(01 << 26)		// Set bits 27 and 26 to 0 and 1, respectively, making pin 13 an output.
+
+/*
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
+*/
 
 int main(void)
 {
@@ -33,6 +36,14 @@ int main(void)
 	GPIOC->MODER &= ~P13CLR;  		// Clear pin mode for Pin 13
 	GPIOC->MODER |= P13OUTPUT;		// Set pin 13 to output mode
 
+	GPIOC->ODR |= (1 << 13);		// Set PC13 high, turning off the LED
+
+
     /* Loop forever */
-	for(;;);
+	while(1)
+	{
+		GPIOC->ODR &= ~(1 << 13);	// Set PC13 low to turn on LED.
+
+		GPIOC->ODR |= (1 << 13);	// Set PC13 high to turn off LED.
+	}
 }
