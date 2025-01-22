@@ -20,3 +20,6 @@
 
 ### BlackPill_Timer1
 ##### The LED toggles here after a certain amount of time has elapsed on Timer 4, which generates an interrupt.  The system clock is 100 MHz, the Timer 4 prescaler is 10,000 and the Timer 4 period is 5000.  This means the timer will generate an interupt with a frequency 100E6/10E3/5E3 = 2Hz, and the LED will therefore toggle every 500 milliseconds.  
+
+### BlackPillBlink_NoHAL
+##### Shows how to toggle the user LED on Port C Pin 13 without using the HAL libraries.  
