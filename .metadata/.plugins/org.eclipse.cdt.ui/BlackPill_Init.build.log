@@ -1,10 +1,17 @@
-17:13:57 **** Incremental Build of configuration Debug for project BlackPill_Init ****
+21:18:08 **** Build of configuration Debug for project BlackPill_Init ****
 make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BlackPill_Init.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/MISC/BlackPill_Init/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_Init.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_Init.elf
+ 
 arm-none-eabi-size  BlackPill_Init.elf 
+arm-none-eabi-objdump -h -S BlackPill_Init.elf  > "BlackPill_Init.list"
    text	   data	    bss	    dec	    hex	filename
   12388	    104	   1976	  14468	   3884	BlackPill_Init.elf
 Finished building: default.size.stdout
  
+Finished building: BlackPill_Init.list
+ 
 
-17:13:57 Build Finished. 0 errors, 0 warnings. (took 194ms)
+21:18:09 Build Finished. 0 errors, 0 warnings. (took 574ms)
 
