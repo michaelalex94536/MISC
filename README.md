@@ -22,4 +22,7 @@
 ##### The LED toggles here after a certain amount of time has elapsed on Timer 4, which generates an interrupt.  The system clock is 100 MHz, the Timer 4 prescaler is 10,000 and the Timer 4 period is 5000.  This means the timer will generate an interupt with a frequency 100E6/10E3/5E3 = 2Hz, and the LED will therefore toggle every 500 milliseconds.  
 
 ### BlackPillBlink_NoHAL
-##### Shows how to toggle the user LED on Port C Pin 13 without using the HAL libraries.  
+##### Shows how to toggle the user LED on Port C Pin 13 without using the HAL libraries.  Very simple program, but if you try to repeat it from scratch, you will see how tedious it is to go through the board schematic, the datasheet, and the reference manual.  But by doing this you can really learn alot.  A project like this also gives one an appreciation of how much time using the HAL libraries can save.  
+
+### BlackPill_PWMBlink1
+##### Here, we use a timer to generate a PWM signal having a frequency of 100 Hz whose duty cycle monotonically increases and decreases.  Since we are using Timer 4, Channel 1, the PWM output signal is visible on Pin B6 of the Black Pill board if you hook up an oscilloscope.  Or, you can connect a jumper wire between Pin B6 and Pin C13, and you will see the LED brightness increase and decrease as the PWM signal duty cycle decreases and increases, respectively. (Since Pin C13 is the cathode, or negative side of the LED, the LED gets brighter as the signal on Pin C13 goes lower.)  
