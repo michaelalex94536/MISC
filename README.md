@@ -26,3 +26,6 @@
 
 ### BlackPill_PWMBlink1
 ##### Here, we use a timer to generate a PWM signal having a frequency of 100 Hz whose duty cycle monotonically increases and decreases.  Since we are using Timer 4, Channel 1, the PWM output signal is visible on Pin B6 of the Black Pill board if you hook up an oscilloscope.  Or, you can connect a jumper wire between Pin B6 and Pin C13, and you will see the LED brightness increase and decrease as the PWM signal duty cycle decreases and increases, respectively. (Since Pin C13 is the cathode, or negative side of the LED, the LED gets brighter as the signal on Pin C13 goes lower.)  
+
+### F407_Timer1
+##### For this project, we use the STM32F407G Discovery board.  The board has 4 user LEDs, and conveniently these LEDs can be connected to Channels 1 through Channel 4 of Timer 4.  This allows us to vary the duty cycle of each LED independently since each channel has its own PWM settings.  

@@ -1,7 +1,11 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+<<<<<<< HEAD
 configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPillBlink_NoHAL Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPill_Timer1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPill_PWMBlink1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPill_Blink2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPill_ExtIntBlink Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPill_Blink Debug
+=======
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPill_PWMBlink1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F407_Timer1 Debug
+>>>>>>> 1e119bcf05660a914565c164509a15e7d058e9e1
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPillBlink_NoHAL\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:BlackPillBlink_NoHAL\ Debug/activeLaunchTarget=null\:---
