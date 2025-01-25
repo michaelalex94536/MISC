@@ -10,3 +10,13 @@
 1737510515255	Delete resource 'NoHAL_BlackPillBlink'
 1737571085803	Delete resource 'BlackPill_NoHALBlink'
 1737671891121	Delete 9 resources
+1737762325598	Delete resource 'stm32_rand/Core/Src/main.c'
+1737762475768	Delete resource 'stm32_rand/USB_DEVICE'
+1737762485015	Delete resource 'stm32_rand/Debug'
+1737766399179	Delete resource 'stm32_rand'
+1737767003118	Delete resource 'F407_RNG/Inc/stm32f411xe.h'
+1737827649923	Rename resource 'F407_RNG'
+1737827662229	Delete resource 'F407_RNG_NoHAL/Debug'
+1737827670838	Delete resource 'F407_RNG_NoHAL/F407_RNG Debug.launch'
+1737827914582	Delete resource 'F407_RNG_NoHAL/Debug'
+1737828112958	Delete resource 'F407_RNG_NoHAL'

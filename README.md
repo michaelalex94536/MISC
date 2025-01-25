@@ -29,3 +29,6 @@
 
 ### F407_Timer1
 ##### For this project, we use the STM32F407G Discovery board.  The board has 4 user LEDs, and conveniently these LEDs can be connected to Channels 1 through Channel 4 of Timer 4.  This allows us to vary the duty cycle of each LED independently since each channel has its own PWM settings.  
+
+### F407_RNG_NoHAL
+##### Shows how to generate random numbers from the STM32F407G-Discovery hardware random number generator without using HAL.  
