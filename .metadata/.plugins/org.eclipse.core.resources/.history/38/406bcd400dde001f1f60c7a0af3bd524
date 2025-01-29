@@ -1,0 +1,59 @@
+/**
+ ******************************************************************************
+*
+*		Project:	F407_RNG_LEDBlink_NoHAL
+*
+*		Use the orange LED on Port D, Pin 13
+*		Turn the LED on and off for a duration based on the random number generator.
+*
+ ******************************************************************************
+ */
+#define STM32F407xx
+#include "stm32f4xx.h"
+#include <stdint.h>
+
+#define GPIOD_EN		(1 << 3)		// RCC enable bit for Port D on AHB1
+#define GPIOD_MODE		(01 << 26)		// Mode bits of Pin 13 to make it an output
+
+#define RNGCLK_EN		(1 << 6)		// Enable the RNG clock
+#define PLL_EN			(1 << 24)		// PLL enable
+#define	RNG_EN			(1 << 2)		// Enable the RNG
+
+void make_delay(uint32_t delay_count);
+
+int main(void)
+{
+
+	uint32_t random_number = 0;				// Generated random number
+
+	// Set up the LED pin
+	RCC->AHB1ENR |= GPIOD_EN;				// Enable port D clock on the AHB1 bus
+	GPIOD->MODER |= GPIOD_MODE;				// Make Pin 13 of port D an output
+	GPIOD->ODR &= ~(1 << 13);				// Set Pin 13 low to keep LED off
+
+	// Set up the RNG
+	RCC->AHB2ENR |= RNGCLK_EN;				// Enable RNG clock
+	RCC->CR |= PLL_EN; 						// Turn on the PLL
+	while((RCC->CR & RCC_CR_PLLRDY) == 0); 	// Wait until PLL is active
+	RNG->CR |= RNG_EN;						// Enable the random number generator
+	RNG->DR;								// Ignore the first number generated
+
+	while(1)								// When new data is available, grab it.
+	{
+		while((RNG->SR & RNG_SR_DRDY) == 0);
+		random_number = RNG->DR;
+
+		GPIOD->ODR |= (1 << 13);				// Turn the LED on by setting Pin 13 high
+		make_delay(random_number >> 14);		// Reduce the delay!
+
+		GPIOD->ODR &= ~(1 << 13);				// Turn the LED off by setting Pin 13 low
+		make_delay(random_number >> 14);		// Reduce the delay
+	}
+
+}
+
+void make_delay(uint32_t delay_count)
+{
+	uint32_t i;
+	for(i = 0; i <= delay_count; i++){}
+}

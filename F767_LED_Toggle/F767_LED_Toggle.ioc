@@ -203,3 +203,4 @@ VP_SYS_VS_Systick.Signal=SYS_VS_Systick
 board=NUCLEO-F767ZI
 boardIOC=true
 isbadioc=false
+isbadioc=false
