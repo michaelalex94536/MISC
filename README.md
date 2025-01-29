@@ -32,3 +32,6 @@
 
 ### F407_RNG_NoHAL
 ##### Shows how to generate random numbers from the STM32F407G-Discovery hardware random number generator without using HAL.  
+
+### F407_RNG_LEDBlink_NoHAL
+##### Here we generate random numbers as in the previous project usin the STM32F407G- DISCO board, but this time we use those numbers to blink the orange LED on and off with random on and off times.  The LED "on" time and LED "off" time use two different random numbers.  

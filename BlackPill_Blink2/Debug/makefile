@@ -60,8 +60,8 @@ all: main-build
 main-build: BlackPill_Blink2.elf secondary-outputs
 
 # Tool invocations
-BlackPill_Blink2.elf BlackPill_Blink2.map: $(OBJS) $(USER_OBJS) /Users/michaelalex/Documents/Git/MISC/BlackPill_Blink2/STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BlackPill_Blink2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/MISC/BlackPill_Blink2/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_Blink2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BlackPill_Blink2.elf BlackPill_Blink2.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/MISC/BlackPill_Blink2/STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BlackPill_Blink2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/BlackPill_Blink2/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_Blink2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

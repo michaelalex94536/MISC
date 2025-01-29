@@ -1,9 +1,12 @@
-10:46:10 **** Incremental Build of configuration Debug for project F407_RNG_NoHAL ****
-make -j8 all 
+22:07:08 **** Incremental Build of configuration Debug for project F407_RNG_NoHAL ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:19:18: warning: variable 'random_number' set but not used [-Wunused-but-set-variable]
-   19 |         uint32_t random_number = 0;                             // Generated random number
+../Src/main.c:22:18: warning: variable 'random_number' set but not used [-Wunused-but-set-variable]
+   22 |         uint32_t random_number = 0;                     // Generated random number
       |                  ^~~~~~~~~~~~~
 arm-none-eabi-gcc -o "F407_RNG_NoHAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/F407_RNG_NoHAL/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_RNG_NoHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: F407_RNG_NoHAL.elf
@@ -17,5 +20,5 @@ Finished building: default.size.stdout
 Finished building: F407_RNG_NoHAL.list
  
 
-10:46:11 Build Finished. 0 errors, 1 warnings. (took 1s.385ms)
+22:07:08 Build Finished. 0 errors, 1 warnings. (took 647ms)
 

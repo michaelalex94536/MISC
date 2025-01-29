@@ -3,3 +3,7 @@
 1737948474310	Delete resource 'F767_LED_Toggle/build.ninja'
 1737948502437	Delete resource 'F767_LED_Toggle/CMakeFiles'
 1737948508653	Delete resource 'F767_LED_Toggle/cmake'
+1738130812739	Delete resource 'F407_RNG_NoHAL/Debug'
+1738130818092	Delete resource 'F407_RNG_NoHAL/F407_RNG_NoHAL Debug.launch'
+1738130863747	Delete resource 'F407_RNG_LEDBlink_NoHAL/F407_RNG_NoHAL Debug.launch'
+1738130870054	Delete resource 'F407_RNG_LEDBlink_NoHAL/Debug'
