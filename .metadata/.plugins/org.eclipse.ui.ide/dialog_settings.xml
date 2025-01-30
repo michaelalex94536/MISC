@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/michael/Documents/STCode/MISC/F407_RNG_LEDBlink_NoHAL"/>
 			<item value="/home/michael/Documents/MISC/F407_RNG_NoHAL"/>
 			<item value="/home/michael/Documents/MISC"/>
 			<item value="/home/michael/Documents/MISC/BlackPill_Init"/>

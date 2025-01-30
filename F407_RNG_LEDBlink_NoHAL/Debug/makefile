@@ -59,8 +59,8 @@ all: main-build
 main-build: F407_RNG_LEDBlink_NoHAL.elf secondary-outputs
 
 # Tool invocations
-F407_RNG_LEDBlink_NoHAL.elf F407_RNG_LEDBlink_NoHAL.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/MISC/F407_RNG_LEDBlink_NoHAL/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "F407_RNG_LEDBlink_NoHAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/F407_RNG_LEDBlink_NoHAL/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_RNG_LEDBlink_NoHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F407_RNG_LEDBlink_NoHAL.elf F407_RNG_LEDBlink_NoHAL.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/STCode/MISC/F407_RNG_LEDBlink_NoHAL/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "F407_RNG_LEDBlink_NoHAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/STCode/MISC/F407_RNG_LEDBlink_NoHAL/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_RNG_LEDBlink_NoHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
