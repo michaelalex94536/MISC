@@ -4183,3 +4183,33 @@ java.io.FileNotFoundException: /home/michael/Documents/STCode/MISC/F407_RNG_NoHA
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-01-29 20:59:24.493
 !MESSAGE Indexed 'F407_RNG_LEDBlink_NoHAL' (4 sources, 76 headers) in 1.23 sec: 5,139 declarations; 9,255 references; 1 unresolved inclusions; 30 syntax errors; 2 unresolved names (0.014%)
+!SESSION 2025-01-30 11:17:42.427 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-30 11:17:46.440
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-30 11:17:46.441
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STCode/MISC/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-30 11:17:50.951
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-01-30 20:57:41.734 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-30 20:57:45.815
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-30 20:57:45.816
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STCode/MISC/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-30 20:57:50.525
+!MESSAGE Started RMI Server, listening on port 41337
