@@ -1,0 +1,40 @@
+/**
+ *	At startup, the system clock is 16 MHz.  We want to enable the HSE (running at 25 MHz) and
+ *	configure the system clock to maximum, or 100 MHz. The HSE is on pins PH0 and PH1.
+ *
+ *	From STM32Cube, the PLL settings need to be:
+ *	/ M = / 12
+ *	* N = X 96
+ *	/ P = / 2
+ *
+ *	AHB1 prescaler: / 1
+ *
+ *
+ ******************************************************************************
+ */
+
+
+#include "stm32f4xx.h"
+
+
+void ConfigSysClock(void)
+{
+
+
+
+}
+
+
+
+int main(void)
+{
+
+
+    /* Loop forever */
+	while(1)
+	{
+
+	}
+}
+
+

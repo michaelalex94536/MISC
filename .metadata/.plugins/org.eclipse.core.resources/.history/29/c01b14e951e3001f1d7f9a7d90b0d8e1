@@ -1,0 +1,49 @@
+/**
+
+	Configure the black pill clock without using HAL.  After reset, the clock will bt at its default value - 16 MHz.  We
+	want to modify this value.  One trick is to open STM32CubeMX and see how the clock gets configured there for starters -
+	why not?  Let's set the clock to its maximum value of 100 MHz,
+
+	The HSE on the board runs at 25 MHz and is connected to pins PH0 and PH1. To get a 100 MHz system clock, the PLL settings are:
+	/ M = / 12, * N = X 96, and / P = / 2 where X = multiply and / means divide.
+
+Procedure:
+1) Enable HSE.
+2)
+
+
+ *
+ ******************************************************************************
+ */
+
+#include <stdint.h>
+#include "stm32f4xx.h"
+
+#define GPIOC_EN		(1 << 2)		// RCC enable bit for Port C on AHB1
+#define GPIOC_MODE		(01 << 26)		// Mode bits of Pin 13 to make it an output
+
+void make_delay(uint32_t delay_count);
+
+
+int main(void)
+{
+	RCC->AHB1ENR |= GPIOC_EN;			// Enable port C clock on the AHB1 bus
+	GPIOC->MODER |= GPIOC_MODE;			// Make Pin 13 of port C an output
+	GPIOC->ODR |= (1 << 13);			// Set Pin 13 high to keep LED off
+
+    /* Loop forever */
+	while(1)
+	{
+		GPIOC->ODR &= ~(1 << 13);		// Turn the LED on by setting Pin 13 low
+		make_delay(100000);
+
+		GPIOC->ODR |= (1 << 13);		// Turn the LED off by setting Pin 13 high
+		make_delay(100000);
+	}
+}
+
+void make_delay(uint32_t delay_count)
+{
+	uint32_t i;
+	for(i = 0; i <= delay_count; i++){}
+}

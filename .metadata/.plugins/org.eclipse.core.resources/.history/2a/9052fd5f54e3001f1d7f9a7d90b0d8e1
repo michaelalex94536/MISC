@@ -1,0 +1,15 @@
+Src/sysmem.o: ../Src/sysmem.c \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/stm32f411xe.h \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/core_cm4.h \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/cmsis_version.h \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/cmsis_compiler.h \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/cmsis_gcc.h \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/mpu_armv7.h \
+ /home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/system_stm32f4xx.h
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/stm32f411xe.h:
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/core_cm4.h:
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/cmsis_version.h:
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/cmsis_compiler.h:
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/cmsis_gcc.h:
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/mpu_armv7.h:
+/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/system_stm32f4xx.h:

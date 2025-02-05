@@ -1,0 +1,35 @@
+/**
+
+	Configure the black pill clock without using HAL.  After reset, the clock will bt at its default value - 16 MHz.  We
+	want to modify this value.  One trick is to open STM32CubeMX and see how the clock gets configured there for starters -
+	why not?  Let's set the clock to its maximum value of 100 MHz,
+
+	The HSE on the board runs at 25 MHz and is connected to pins PH0 and PH1. To get a 100 MHz system clock, the PLL settings are:
+	/ M = / 12, * N = X 96, and / P = / 2 where X = multiply and / means divide.
+
+Procedure:
+1) Enable HSE.
+2)
+
+
+ *
+ ******************************************************************************
+ */
+
+#include <stdint.h>
+#include "stm32f4xx.h"
+
+// 1) Enable HSE and wait until it is ready
+
+
+
+int main(void)
+{
+
+    /* Loop forever */
+	while(1)
+	{
+
+	}
+}
+
