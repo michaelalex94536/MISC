@@ -1,4 +1,12 @@
 /**
+<<<<<<< HEAD
+=======
+ *
+ *	Here we set the system clock to 100 MHz for the Black Pill board, and to confirm it works,
+ *	we blink the on-board LED.  No HAL was used here.
+ *
+ *
+>>>>>>> dadf48eadef76ffdf32c8554389f9ea492dda575
  *	At startup, the system clock is 16 MHz.  We want to enable the HSE (running at 25 MHz) and
  *	configure the system clock to maximum, or 100 MHz. The HSE is on pins PH0 and PH1.
  *
@@ -53,11 +61,17 @@ int main(void)
     /* Loop forever */
 	while(1)
 	{
+
 //		GPIOC->ODR &= ~(1 << 13);		// Turn the LED on by setting Pin 13 low
 //		make_delay(1000000);
 
 //		GPIOC->ODR |= (1 << 13);		// Turn the LED off by setting Pin 13 high
 		GPIOC->ODR ^= GPIOC->ODR;
+
+		GPIOC->ODR &= ~(1 << 13);		// Turn the LED on by setting Pin 13 low
+		make_delay(1000000);
+
+		GPIOC->ODR |= (1 << 13);		// Turn the LED off by setting Pin 13 high
 		make_delay(1000000);
 	}
 }

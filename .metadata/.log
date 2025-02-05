@@ -4213,9 +4213,57 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-30 20:57:50.525
 !MESSAGE Started RMI Server, listening on port 41337
+<<<<<<< HEAD
 
 !ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-02-04 22:58:02.458
 !MESSAGE Project is null
 
 !ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-02-04 22:58:30.964
 !MESSAGE Project is null
+=======
+!SESSION 2025-02-04 15:01:45.439 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/michael/Documents/STCode/MISC -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-04 15:01:49.172
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-04 15:01:49.173
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STCode/MISC/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-04 15:01:54.210
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-04 15:12:04.647
+!MESSAGE Indexed 'BlackPillClkConfig_NoHAL' (3 sources, 13 headers) in 0.81 sec: 1,102 declarations; 1,616 references; 15 unresolved inclusions; 58 syntax errors; 812 unresolved names (23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-04 15:12:52.528
+!MESSAGE Indexed 'BlackPillClkCfg_NoHAL' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-04 16:01:16.953
+!MESSAGE Indexed 'BlackPillBlink_NoHAL2' (3 sources, 13 headers) in 0.418 sec: 1,125 declarations; 1,647 references; 15 unresolved inclusions; 66 syntax errors; 833 unresolved names (23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-04 16:03:59.872
+!MESSAGE Indexed 'BlackPillCfgClk_NoHAL' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2025-02-04 20:34:43.437 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-02-04 20:34:44.715
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-04 20:34:47.581
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-04 20:34:47.582
+!MESSAGE Log4j2 initialized with config file /home/michael/Documents/STCode/MISC/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-04 20:34:52.275
+!MESSAGE Started RMI Server, listening on port 41337
+>>>>>>> dadf48eadef76ffdf32c8554389f9ea492dda575

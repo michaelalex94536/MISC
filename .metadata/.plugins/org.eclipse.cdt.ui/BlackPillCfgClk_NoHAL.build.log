@@ -1,9 +1,10 @@
-22:58:33 **** Clean-only build of configuration Debug for project BlackPillCfgClk_NoHAL ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f411ceux.d ./Startup/startup_stm32f411ceux.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf BlackPillCfgClk_NoHAL.elf BlackPillCfgClk_NoHAL.list BlackPillCfgClk_NoHAL.map default.size.stdout
+23:04:24 **** Incremental Build of configuration Debug for project BlackPillCfgClk_NoHAL ****
+make -j8 all 
+arm-none-eabi-size  BlackPillCfgClk_NoHAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1032	      0	   1568	   2600	    a28	BlackPillCfgClk_NoHAL.elf
+Finished building: default.size.stdout
  
 
-22:58:34 Build Finished. 0 errors, 0 warnings. (took 580ms)
+23:04:25 Build Finished. 0 errors, 0 warnings. (took 580ms)
 

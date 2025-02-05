@@ -1,6 +1,21 @@
-22:58:33 **** Clean-only build of configuration Debug for project BlackPillCfgClk_NoHAL ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f411ceux.d ./Startup/startup_stm32f411ceux.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf BlackPillCfgClk_NoHAL.elf BlackPillCfgClk_NoHAL.list BlackPillCfgClk_NoHAL.map default.size.stdout
+23:04:17 **** Incremental Build of configuration Debug for project BlackPillCfgClk_NoHAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -include"/home/michael/Documents/STCode/MISC/BlackPillCfgClk_NoHAL/Inc/stm32f411xe.h" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "BlackPillCfgClk_NoHAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/STCode/MISC/BlackPillCfgClk_NoHAL/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPillCfgClk_NoHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPillCfgClk_NoHAL.elf
+ 
+arm-none-eabi-size  BlackPillCfgClk_NoHAL.elf 
+arm-none-eabi-objdump -h -S BlackPillCfgClk_NoHAL.elf  > "BlackPillCfgClk_NoHAL.list"
+   text	   data	    bss	    dec	    hex	filename
+   1032	      0	   1568	   2600	    a28	BlackPillCfgClk_NoHAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPillCfgClk_NoHAL.list
+ 
+23:04:24 **** Incremental Build of configuration Debug for project BlackPillCfgClk_NoHAL ****
+make -j8 all 
+arm-none-eabi-size  BlackPillCfgClk_NoHAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1032	      0	   1568	   2600	    a28	BlackPillCfgClk_NoHAL.elf
+Finished building: default.size.stdout
  
