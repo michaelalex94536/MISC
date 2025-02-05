@@ -1,20 +1,20 @@
-13:44:19 **** Build of configuration Debug for project BlackPillBlink_NoHAL ****
-make -j4 all 
+15:59:29 **** Build of configuration Debug for project BlackPillBlink_NoHAL ****
+make -j8 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411ceux.d" -MT"Startup/startup_stm32f411ceux.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411ceux.o" "../Startup/startup_stm32f411ceux.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "BlackPillBlink_NoHAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/MISC/BlackPillBlink_NoHAL/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPillBlink_NoHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -include"/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/stm32f411xe.h" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -include"/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/stm32f411xe.h" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -include"/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/Inc/stm32f411xe.h" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "BlackPillBlink_NoHAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/michael/Documents/STCode/MISC/BlackPillBlink_NoHAL/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPillBlink_NoHAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: BlackPillBlink_NoHAL.elf
  
 arm-none-eabi-size  BlackPillBlink_NoHAL.elf 
+arm-none-eabi-objdump -h -S BlackPillBlink_NoHAL.elf  > "BlackPillBlink_NoHAL.list"
    text	   data	    bss	    dec	    hex	filename
     796	      0	   1568	   2364	    93c	BlackPillBlink_NoHAL.elf
 Finished building: default.size.stdout
  
-arm-none-eabi-objdump -h -S BlackPillBlink_NoHAL.elf  > "BlackPillBlink_NoHAL.list"
 Finished building: BlackPillBlink_NoHAL.list
  
 
-13:44:20 Build Finished. 0 errors, 0 warnings. (took 587ms)
+15:59:30 Build Finished. 0 errors, 0 warnings. (took 675ms)
 
