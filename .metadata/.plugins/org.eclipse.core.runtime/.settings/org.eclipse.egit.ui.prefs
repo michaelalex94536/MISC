@@ -1,2 +1,4 @@
 RepositorySearchDialogSearchPath=/home/michael/Documents/STCode/MISC
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>j</message>\n<message>Severe&\#x0A;</message>\n<message>main.c file missing from project?\!?</message>\n<message>Ugh</message>\n<message>Didn&apos;t save main.c at first...</message>\n<message>Added a Black Pill project that shows how to set the F411 clock to&\#x0A;maximum (100 MHz) without using HAL.  The on-board LED is then blinked&\#x0A;on and off to confirm.</message>\n</messages>
 eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\n<FilterCache/>

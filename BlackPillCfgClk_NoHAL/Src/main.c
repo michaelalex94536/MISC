@@ -61,13 +61,6 @@ int main(void)
     /* Loop forever */
 	while(1)
 	{
-
-//		GPIOC->ODR &= ~(1 << 13);		// Turn the LED on by setting Pin 13 low
-//		make_delay(1000000);
-
-//		GPIOC->ODR |= (1 << 13);		// Turn the LED off by setting Pin 13 high
-		GPIOC->ODR ^= GPIOC->ODR;
-
 		GPIOC->ODR &= ~(1 << 13);		// Turn the LED on by setting Pin 13 low
 		make_delay(1000000);
 
